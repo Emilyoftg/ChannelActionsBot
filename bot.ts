@@ -88,8 +88,7 @@ bot
     await ctx.reply(ctx.t("start-msg", { user: ctx.from.first_name }), {
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
-        .text(ctx.t("usage-help"), "helper").row()
-        .url(ctx.t("updates"), "https://t.me/BotzHub"),
+        .url(ctx.t("🎬 Mᴏᴠɪᴇs Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🎬"), "https://t.me/MovieClubOfficiall"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from.id);
@@ -112,8 +111,7 @@ bot.callbackQuery("start", async (ctx) => {
       ctx.t("start-msg", { user: ctx.from.first_name }),
       {
         reply_markup: new InlineKeyboard()
-          .text(ctx.t("usage-help"), "helper").row()
-          .url(ctx.t("updates"), "https://t.me/BotzHub"),
+          .url(ctx.t("🎬 Mᴏᴠɪᴇs Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🎬"), "https://t.me/MovieClubOfficiall"),
         disable_web_page_preview: true,
         parse_mode: "HTML",
       },
