@@ -1,11 +1,6 @@
-start-msg = Hi {$user}!
-    <b>I'm Channel Actions Bot</b>, a bot mainly focused on working with the new <a href='https://t.me/telegram/153'>admin approval invite links</a>.
-
-    <i>I can</i>:
-    - <i>Auto approve new join requests</i>
-    - <i>Auto Decline New Join Requests.</i>
-
-    <code>Click the below button to know how to use me!</code>
+start-msg = 𝖧𝖾𝗅𝗅𝗈 {$user} ✨️
+  
+    <b>I'm Channel Actions Bot 𝖲𝗉𝖾𝖼𝗂𝖺𝗅𝗅𝗒 𝖬𝖺𝖽𝖾 𝖥𝗈𝗋 𝖳𝖾𝖺𝗆 𝖬𝗈𝗏𝗂𝖾 𝖢𝗅𝗎𝖻.𝖩𝗈𝗂𝗇 𝖡𝖾𝗅𝗈𝗐 𝖢𝗁𝖺𝗇𝗇𝖾𝗅𝗌 𝖥𝗈𝗋 𝖥𝗎𝗍𝗎𝗋𝖾 𝖴𝗉𝖽𝖺𝗍𝖾𝗌!</b>
 
 help = <b>Usage instructions.</b>
     
