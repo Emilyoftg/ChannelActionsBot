@@ -88,7 +88,7 @@ bot
     await ctx.reply(ctx.t("start-msg", { user: ctx.from.first_name }), {
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
-        .url(ctx.t("🎬 Mᴏᴠɪᴇs Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🎬"), "https://t.me/MovieClubOfficiall"),
+        .url(ctx.t("𝖴𝖯𝖣𝖠𝖳𝖤𝖲"), "https://t.me/MovieClubOfficiall"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from.id);
@@ -111,7 +111,7 @@ bot.callbackQuery("start", async (ctx) => {
       ctx.t("start-msg", { user: ctx.from.first_name }),
       {
         reply_markup: new InlineKeyboard()
-          .url(ctx.t("🎬 Mᴏᴠɪᴇs Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🎬"), "https://t.me/MovieClubOfficiall"),
+          .url(ctx.t("𝖴𝖯𝖣𝖠𝖳𝖤𝖲"), "https://t.me/MovieClubOfficiall"),
         disable_web_page_preview: true,
         parse_mode: "HTML",
       },
@@ -251,9 +251,9 @@ bot.on("chat_join_request", async (ctx) => {
   const settings = await getSettings(update.chat.id);
   let approve_or_not, welcome;
   const def_welcome_approve =
-    "<b>𝖧𝖾𝗒 {name}, 𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖳𝗈 𝖩𝗈𝗂𝗇 {chat} 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖠𝗉𝗉𝗋𝗈𝗏𝖾𝖽!</b>";
+    "Hey {name}, your request to join {chat} has been approved!";
   const def_welcome_decline =
-    "<b>𝖧𝖾𝗒 {name}, 𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖳𝗈 𝖩𝗈𝗂𝗇 {chat} 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖣𝖾𝖼𝗅𝗂𝗇𝖾𝖽!</b>";
+    "Hey {name}, your request to join {chat} has been declined!";
 
   if (settings == null) {
     approve_or_not = true;
@@ -282,7 +282,7 @@ bot.on("chat_join_request", async (ctx) => {
     return;
   }
 
-  welcome += "\n\n<b>𝖩𝗈𝗂𝗇 𝖳𝗁𝖾 𝖡𝖾𝗅𝗈𝗐 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾𝗌 𝖨𝗇𝗌𝗍𝖺𝗇𝗍𝗅𝗒!</b>";
+  welcome += "\n\nSend /start to know more!";
   welcome = welcome.replace("{name}", update.from.first_name).replace(
     "{chat}",
     update.chat.title,
