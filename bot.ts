@@ -88,7 +88,8 @@ bot
     await ctx.reply(ctx.t("start-msg", { user: ctx.from.first_name }), {
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
-        .url(ctx.t("𝖴𝖯𝖣𝖠𝖳𝖤𝖲"), "https://t.me/MovieClubOfficiall"),
+        .url(ctx.t("𝖫𝖺𝗍𝖾𝗌𝗍 𝖬𝗈𝗏𝗂𝖾𝗌 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝗌"), "https://t.me/+y7AVVgEjv49iZDk1").row()
+        .url(ctx.t("𝖫𝖺𝗍𝖾𝗌𝗍 𝖲𝖾𝗋𝗂𝖾𝗌 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝗌"), "https://t.me/+myfpVpcHRJYwZjFl"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from.id);
@@ -111,8 +112,9 @@ bot.callbackQuery("start", async (ctx) => {
       ctx.t("start-msg", { user: ctx.from.first_name }),
       {
         reply_markup: new InlineKeyboard()
-          .url(ctx.t("𝖴𝖯𝖣𝖠𝖳𝖤𝖲"), "https://t.me/MovieClubOfficiall"),
-        disable_web_page_preview: true,
+        .url(ctx.t("𝖫𝖺𝗍𝖾𝗌𝗍 𝖬𝗈𝗏𝗂𝖾𝗌 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝗌"), "https://t.me/+y7AVVgEjv49iZDk1").row()
+        .url(ctx.t("𝖫𝖺𝗍𝖾𝗌𝗍 𝖲𝖾𝗋𝗂𝖾𝗌 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝗌"), "https://t.me/+myfpVpcHRJYwZjFl"),
+      disable_web_page_preview: true,
         parse_mode: "HTML",
       },
     );
